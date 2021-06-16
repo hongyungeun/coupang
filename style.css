@@ -187,13 +187,38 @@ header .logo img {
     position: relative;
     height: 800px;
 }
-
-.sea-item {
-    position: absolute;
-    width: 800px;
-    margin-left: 500px;
+.slick-hidden {
+    display: block;
 }
-.sea-item.prev {}
+.sea-item-container {
+    position: relative;
+}
+.sea-item-container {
+    width: 800px;
+    display: inline-block;
+}
+
+.main__banner--arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    font-size: 1rem;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.banner__prev {
+    left: 0;
+}
+.banner__next {
+    right: 0;
+}
+
 .tab-sub {
     display: flex;
     justify-content: center;
@@ -209,7 +234,6 @@ header .logo img {
     border: 1px solid #bbb;
     width: 300px;
     display: inline-block;
-    /* margin-right: 55px; */
     padding-bottom: 20px;
 
 }
@@ -348,16 +372,16 @@ header .logo img {
     /* border: 1px solid #000; */
     
 }
-.test {
+.second-img {
     background: url(./img/쿠팡이미지/구찌.png)no-repeat center/cover;
 }
-.test2{
+.second-img2{
     background: url(./img/쿠팡이미지/다이나핏.png)no-repeat center/cover;
 }
-.test3{
+.second-img3{
     background: url(./img/쿠팡이미지/라이프스타일.jpg)no-repeat center/cover;
 }
-.test4{
+.second-img4{
     background: url(./img/쿠팡이미지/버버리.png)no-repeat center/cover;
 }
 .line {

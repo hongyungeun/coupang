@@ -32,7 +32,11 @@ $(document).ready(function(){
     });
 
 $(document).ready(function(){
+    
+
         $('.sea-item').slick({
-        
+            arrow: true,
+        prevArrow: $('.banner__prev'),
+        nextArrow: $('.banner__next')
         });
     });
